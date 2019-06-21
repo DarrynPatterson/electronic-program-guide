@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import Topbar from "./Topbar";
 import Breadcrumb from "./Breadcrumb";
+import ChannelList from "../channels/ChannelList";
 
 class Content extends Component {
 
@@ -15,7 +16,7 @@ class Content extends Component {
               <Topbar />
               <div className="container">
                 <Breadcrumb name={selectedItem} />
-                {selectedItem === 'channels' && "Channels"}
+                {selectedItem === 'channels' && <ChannelList />}
                 {selectedItem === 'schedule' && "Schedule"}
               </div>
             </div>
