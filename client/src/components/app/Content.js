@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import Topbar from "./Topbar";
-import Breadcrumb from "./Breadcrumb";
 import ChannelList from "../channels/ChannelList";
+import Schedule from "../schedule/Schedule";
 
 class Content extends Component {
 
@@ -14,10 +14,9 @@ class Content extends Component {
           <div id="content-wrapper" className="d-flex flex-column">
             <div id="content">
               <Topbar />
-              <div className="container">
-                <Breadcrumb name={selectedItem} />
+              <div>
                 {selectedItem === 'channels' && <ChannelList />}
-                {selectedItem === 'schedule' && "Schedule"}
+                {selectedItem === 'schedule' && <Schedule />}
               </div>
             </div>
           </div>

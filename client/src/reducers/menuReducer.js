@@ -1,7 +1,7 @@
 import { MENU_ITEM_SELECTED } from "../actions/types";
 
 const initialState = {
-  selectedItem: "channels"
+  selectedItem: "schedule"
 };
 
 export default (state = initialState, action) => {

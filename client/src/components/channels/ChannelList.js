@@ -4,6 +4,7 @@ import { getChannels } from "../../actions/channelActions";
 import PropTypes from "prop-types";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSpinner } from "@fortawesome/free-solid-svg-icons";
+import Breadcrumb from "../app/Breadcrumb";
 import ChannelListItem from "./ChannelListItem";
 import moment from "moment";
 
@@ -18,12 +19,16 @@ class ChannelList extends Component {
   }
 
   render() {
+    const selectedItem = this.props.menu.selectedItem;
     const channels = this.props.channels;
     const userPreferences = this.props.userPreferences;
     const isLoading = this.props.isLoading;
 
     return (
-      <>
+      <div className="container">
+        <div className="text-center">
+          <Breadcrumb name={selectedItem} />
+        </div>
         {isLoading && (<FontAwesomeIcon icon={faSpinner} spin />)}
 
         <div className="list-group">
@@ -74,7 +79,7 @@ class ChannelList extends Component {
               );
             })}
         </div>
-      </>
+      </div>
     );
   }
 }
@@ -82,7 +87,8 @@ class ChannelList extends Component {
 const mapStateToProps = state => ({
   channels: state.channelData.channels,
   userPreferences: state.channelData.userPreferences,
-  isLoading: state.channelData.isLoading
+  isLoading: state.channelData.isLoading,
+  menu: state.menu
 });
 
 export default connect(
