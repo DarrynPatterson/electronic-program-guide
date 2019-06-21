@@ -1,0 +1,28 @@
+{
+  "name": "electronic-program-guide",
+  "version": "1.0.0",
+  "description": "Electronic Program Guide",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "npm install --prefix client",
+    "start": "node dist/server.js",
+    "server": "nodemon dist/server.js",
+    "build": "tsc -p .",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Darryn Patterson",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^3.6.0",
+    "express": "^4.16.3",
+    "jsonwebtoken": "^8.5.0",
+    "moment": "^2.24.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.1",
+    "nodemon": "^1.17.5",
+    "ts-node": "^8.2.0",
+    "typescript": "^3.5.1"
+  }
+}
