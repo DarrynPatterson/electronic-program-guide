@@ -23,16 +23,18 @@ class ChannelListItem extends Component {
               <img style={{ width: "100px", height: "100px" }} src={channel.logo} alt={channel.title} />
               <h5 className="mt-2">{channel.title}</h5>
             </div>
-            <div className="col-sm-8">
-              <h3>{program.title}</h3>
-              <div className="mt-4 mb-4">
+            <div className="col-sm-10">
+              <div className="ml-4">
+                <h3>{program.title}</h3>
+                <div className="float-right">
+                  <FontAwesomeIcon icon={faStar} size="2x" style={{ color: favoriteIconColor }} />
+                </div>
+              </div>
+              <div className="mt-4 mb-4 ml-4">
                 <h5 className="text-muted">{program.time}</h5>
               </div>
-              {progress.isProgressAvailable && preferenceContent}
-            </div>
-            <div className="col-sm-2">
-              <div className="float-right">
-                <FontAwesomeIcon icon={faStar} size="2x" style={{ color: favoriteIconColor }} />
+              <div className="ml-4">
+                {progress.isProgressAvailable && preferenceContent}
               </div>
             </div>
           </div>

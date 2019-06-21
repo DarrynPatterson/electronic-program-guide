@@ -13,9 +13,10 @@ const Program = ({id, title, startTime, endTime, top, left, width}) => {
         width: `${width}px`,
         height: "100px",
         wordWrap: "break-word",
-        border: "1px solid black",
+        border: "2px groove black",
+        background: "rgb(40, 44, 52)"
       }}>
-        <div style={{fontSize:"14px", fontWeight:"bold"}}>{title}</div>
+        <div style={{fontSize:"14px", fontWeight:"bold", color:"ghostwhite"}}>{title}</div>
         <div className="mt-2">
           <small className="text-muted">{startTime}-{endTime}</small>
         </div>

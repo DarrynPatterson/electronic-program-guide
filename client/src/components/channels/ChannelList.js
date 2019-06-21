@@ -26,11 +26,8 @@ class ChannelList extends Component {
 
     return (
       <div className="container">
-        <div className="text-center">
-          <Breadcrumb name={selectedItem} />
-        </div>
+        <Breadcrumb name={selectedItem} />
         {isLoading && (<FontAwesomeIcon icon={faSpinner} spin />)}
-
         <div className="list-group">
           {!isLoading && channels.map(channelData => {
 

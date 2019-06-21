@@ -27,14 +27,16 @@ class Schedule extends Component {
       height: "800px",
       border:"1px solid black",
       overflowX: "scroll",
-      marginTop: "50px"
+      marginTop: "50px",
+      borderLeft: "2px solid black",
+      borderTop: "2px solid black"
     };
 
     return <div className="row h-100 justify-content-center">
       <div style={scheduleStyle}>
         {!isLoading && channels.map((channel, index) => {
 
-          // Build build a row for each channel schedule
+          // Build a row for each channel schedule
           const top = rowHeight * index;
           return (<ChannelSchedule id={channel.id} top={top} channelLogo={channel.images.logo} channelTitle={channel.title} schedule={channel.schedules} />)
         })}

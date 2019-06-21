@@ -11,11 +11,12 @@ class ChannelSchedule extends Component {
     const channelTitle = this.props.channelTitle;
     const schedule = this.props.schedule;
 
-    const rowWidth = 1440; // There are 1440 minutes in a day
+    const rowWidth = 1440; // 1440 minutes in a day. Convenient measurement
     let cellPositions = [];
     let accLeft = 100; // Accumulative left. Starts at 100 to account for the with of the channel logo
     let minutesMultiplier = 4; // If set to 1, then each program's minute will be represented by 1px
 
+    // Build an array of program cell positions
     schedule.forEach((program, index) => {
       const startTime = moment(program.start);
       const endTime = moment(program.end);
@@ -27,7 +28,7 @@ class ChannelSchedule extends Component {
 
     return <>
       <div id={id} style={{position:"absolute", width:`${rowWidth}px`, top:`${top}px`}}>
-        <img style={{ width:"99px", height:"99px", float:"left" }} src={channelLogo} alt={channelTitle} />
+        <img style={{ width:"99px", height:"99px", float:"left", backgroundColor:"white" }} src={channelLogo} alt={channelTitle} />
       </div>
 
       {schedule.map((program, index) => {
