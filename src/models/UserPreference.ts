@@ -24,6 +24,41 @@ class UserPreference {
             "percentage": 5,
             "position": 1
           }
+        },
+        {
+          "id": "hbo_program_1",
+          "progress": {
+            "percentage": 0,
+            "position": 0
+          }
+        },
+        {
+          "id": "cw_program_1",
+          "progress": {
+            "percentage": 31,
+            "position": 0
+          }
+        },
+        {
+          "id": "vox_program_1",
+          "progress": {
+            "percentage": 0,
+            "position": 1
+          }
+        },
+        {
+          "id": "history_program_1",
+          "progress": {
+            "percentage": 57,
+            "position": 0
+          }
+        },
+        {
+          "id": "channel5_program_1",
+          "progress": {
+            "percentage": 0,
+            "position": 1
+          }
         }
       ]
     };

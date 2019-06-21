@@ -503,7 +503,7 @@ class Channel {
           schedules: [
             {
               title: "Interesting Show",
-              id: "dummy_program_id",
+              id: "hbo_program_1",
               start: "2018-10-26T00:00:00+02:00",
               end: "2018-10-26T00:40:00+02:00"
             },
@@ -764,7 +764,7 @@ class Channel {
           schedules: [
             {
               title: "Awesome Program",
-              id: "dummy_program_id",
+              id: "cw_program_1",
               start: "2018-10-26T00:00:00+02:00",
               end: "2018-10-26T00:50:00+02:00"
             },
@@ -1001,7 +1001,7 @@ class Channel {
           schedules: [
             {
               title: "Supernatural",
-              id: "dummy_program_id",
+              id: "vox_program_1",
               start: "2018-10-26T00:00:00+02:00",
               end: "2018-10-26T00:50:00+02:00"
             },
@@ -1251,12 +1251,12 @@ class Channel {
           id: "history",
           title: "History",
           images: {
-            logo: "https://openserve.co.za/open/media/photologue/photos/cache/Vox---Green-logo-272x272_image_3_lg.png"
+            logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/History_Logo.svg/571px-History_Logo.svg.png"
           },
           schedules: [
             {
               title: "Cool Stuff",
-              id: "dummy_program_id",
+              id: "history_program_1",
               start: "2018-10-26T00:00:00+02:00",
               end: "2018-10-26T00:20:00+02:00"
             },
@@ -1506,12 +1506,12 @@ class Channel {
           id: "sixx",
           title: "Sixx",
           images: {
-            logo: "https://openserve.co.za/open/media/photologue/photos/cache/Vox---Green-logo-272x272_image_3_lg.png"
+            logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Sixx.svg/200px-Sixx.svg.png"
           },
           schedules: [
             {
               title: "Vikings",
-              id: "dummy_program_id",
+              id: "sixx_program_1",
               start: "2018-10-26T00:00:00+02:00",
               end: "2018-10-26T00:50:00+02:00"
             },
@@ -1749,12 +1749,12 @@ class Channel {
           id: "tv2norway",
           title: "TV 2 Norway",
           images: {
-            logo: "https://openserve.co.za/open/media/photologue/photos/cache/Vox---Green-logo-272x272_image_3_lg.png"
+            logo: "https://upload.wikimedia.org/wikipedia/en/thumb/f/f1/TV2_logo_1980s.svg/1024px-TV2_logo_1980s.svg.png"
           },
           schedules: [
             {
               title: "Game of Thrones",
-              id: "dummy_program_id",
+              id: "tv2norway_program_1",
               start: "2018-10-26T00:00:00+02:00",
               end: "2018-10-26T00:30:00+02:00"
             },
@@ -1992,12 +1992,12 @@ class Channel {
           id: "channel5",
           title: "Channel 5",
           images: {
-            logo: "https://openserve.co.za/open/media/photologue/photos/cache/Vox---Green-logo-272x272_image_3_lg.png"
+            logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/TV5_%28ABC5%29_Logo.svg/220px-TV5_%28ABC5%29_Logo.svg.png"
           },
           schedules: [
             {
               title: "Game of Thrones",
-              id: "dummy_program_id",
+              id: "channel5_program_1",
               start: "2018-10-26T00:00:00+02:00",
               end: "2018-10-26T00:50:00+02:00"
             },
